@@ -8,7 +8,7 @@ To create and monitor Bus Topology and effective data transmission using NS2 Sof
 PC System with Linux OS, NS2 software.
 
 # ALGORITHM
-
+```
 STEP 1: Start the program.
 STEP 2: Declare the global variables ns for creating a new simulator.
 STEP 3: Open the network animator file in the write mode.
@@ -24,9 +24,9 @@ STEP 12: Create the traffic generator CBR for the source and destination files.
 STEP 13: Define the plot window and finish procedure.
 STEP 14: In the definition of the finish procedure declare the global variables. STEP 15: Close the trace file and namefile and execute the network animation file. STEP 16: At the particular time call the finish procedure.
 STEP 17: Stop the program.
-
+```
 # PROGRAM:
-
+```
 
 #Create a simulator object set ns [new Simulator] #Open the nam trace file set nf [open out.nam w]
 $ns namtrace-all $nf #Define a 'finish' procedure proc finish {}
@@ -56,8 +56,10 @@ $ns at 4.5 "$cbr0 stop"
 #Call the finish procedure after 5 seconds of simulation time
 $ns at 5.0 "finish"
 $ns run
- 
+ ```
 # OUTPUT
+![WhatsApp Image 2025-09-03 at 12 28 55 PM (1)](https://github.com/user-attachments/assets/98fc6529-9d39-480f-83c1-ee79fdfad75f)
+
 
 
 # RESULT
